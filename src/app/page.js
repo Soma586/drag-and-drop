@@ -41,8 +41,8 @@ function DraggableItem({ id, name, location, image }) {
           src={image}
           alt={name}
           className="rounded-lg"
-          width={300}
-          height={300}
+          width={200}
+          height={200}
         />
         <div className="ml-8">
           <h3>{name}</h3>
@@ -53,7 +53,7 @@ function DraggableItem({ id, name, location, image }) {
   );
 }
 
-function DragPreview({ item, active, initialMousePosition }) {
+function DragPreview({ item }) {
   return (
     <div style={{ width: "300px" }}>
       <div className="p-4 border border-gray-300 shadow-lg bg-white w-300 flex items-center rounded-lg ">
